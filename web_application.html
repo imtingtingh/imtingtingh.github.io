@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<!--
+Tingting Huang
+    Contact: huangtt@upenn.edu
+    Created: July 27th, 2020.
+    Last Updated: July 31st, 2020
+    Tingting Huang's personal website. This site has information about her,
+	details about her education, work experience, skills and portfolio, as well as links to her GitHub and LinkedIn Profiles.
+	This site is hosted on GitHub Pages. Theme based on the Big Picture Theme by HTML5 UP.
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>LivabilityXplorer</title>
+		<link rel="icon" type="image/x-icon" href="images/logo2.png">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+		<header id="header">
+			<h1>Tingting Huang</h1>
+			<nav>
+				<ul>
+					<li><a href="index.html#intro">Home</a></li>
+					<li><a href="index.html#one">About Me</a></li>
+					<li><a href="index.html#two">CV</a></li>
+					<li><a href="index.html#work">Portfolio</a></li>
+					<li><a href="index.html#three">Fun</a></li>
+					<li><a href="index.html#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+				<!-- Main -->
+					<div id="main">
+					<div class="row">
+						<div class="column">
+							<h2>Exploring Urban Habitat Suitability: Harnessing Data-Driven Insights through LivabilityXplorer</h2>
+							<br>
+                        <p>LivabilityXplorer is the final project I developed with Jacey Chang under the guidance of 
+                            Prof. Andy Eschbacher for course <strong>Geospatial Cloud Computing & Visualization</strong> in 2021 Spring. 
+                            In the search for the perfect place to call home, individuals often face a multitude of challenges. 
+                            Determining which neighborhoods align with their preferences and requirements can be a daunting task. 
+                            Recognizing this need, we present LivabilityXplorer, a web application designed and developed to provide 
+                            comprehensive livability analysis for any place in Philadelphia. By integrating affordability, diversity, 
+                            amenity, transportation, and crime data, LivabilityXplorer offers users the ability to evaluate the livability 
+                            of different locations in the city. </p>
+                        </span><img src="images/web_app/index_page.gif" class="image fit" alt="" /></span>
+                        <p><strong>Key Features</strong></p>
+                        <p>LivabilityXplorer offers several distinctive features aimed at facilitating comprehensive livability analysis at multiple levels. </p>
+                        <p><strong>Comprehensive Affordability Analysis</strong>: Provides housing average rent data specific to a chosen location, allows users 
+                            to explore how affordable different neighborhoods are within Philadelphia.</p>
+                        <p><strong>Diversity Insights</strong>: Leveraging demographic data garnered from Census records enables users to evaluate racial 
+                            composition and education levels within specific areas.</p>
+                        <p><strong>Amenity Assessment</strong>: By utilizing OpenStreetMap POI data combined with geospatial analysis techniques implemented 
+                            through Mapbox integration, LivabilityXplorer offers users a holistic understanding of available amenities such as grocery stores, 
+                            schools, supermarkets within their desired locations.</p>
+                        </span><img src="images/web_app/basic_amenity.gif" class="image fit" alt="" /></span>
+                        <p><strong>Transportation Evaluation</strong>: Generates 10/20/30 minutes isochrone maps based on walking/cycling/driving, allows 
+                            individuals to assess transportation accessibility within customizable time frames around their chosen location.</p>                        
+                        </span><img src="images/web_app/transportation.gif" class="image fit" alt="" /></span>
+                        <p><strong>Crime Visualization</strong>: Utilizing shooting incident heat maps derived from relevant crime statistics contributes 
+                            valuable insights into neighborhood safety profiles.</p>
+                        </span><img src="images/web_app/crime_density.gif" class="image fit" alt="" /></span>
+                        <p><strong>Data Collection and Integration</strong></p>
+                        <p>LivabilityXplorer integrates diverse datasets to evaluate and analyze multiple aspects of livability, including affordability, 
+                            diversity, amenity availability, transportation accessibility, and crime rates in various areas of Philadelphia.</p>
+                        <p><strong>Crime Data</strong>: The crime data, specifically shooting victim data, is sourced from Carto. The specific data source 
+                            for shooting victim information can be accessed through the following link: https://phl.carto.com/api/v2/sql?q=SELECT+*+FROM+shootings&filename=shootings&format=geojson&skipfields=cartodb_id. 
+                            This data helps evaluate the safety aspect of different neighborhoods.</p>                        
+                        <p><strong>Public Transportation Stops Data</strong>: The public transportation stops data is sourced from SEPTA. The dataset contains 
+                            information about various transit stops and routes within the city. The actual data source can be accessed through this link: 
+                            https://services2.arcgis.com/9U43PSoL47wawX5S/arcgis/rest/services/Spring_2019_Stops_By_Route/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=json. 
+                            This data helps assess transportation accessibility in different areas. </p>
+                        <p><strong>Amenities Data</strong>: Basic demographic and socioeconomic information such as race demographics, age distribution, economics, 
+                            and housing values come from ACS (American Community Survey) 2018 Census data. This dataset provides essential socioeconomic indicators for 
+                            different neighborhoods in Philadelphia. The specific query for this data is performed using BigQuery. </p>
+                        <p><strong>System Architecture </strong></p>
+                        </span><img width="600" src="images/web_app/Web_Architecture.png" alt="" /></span>
+                        <p><strong>Use Case Scenarios </strong></p>
+                        <p>Facilitating Housing Decision-Making Processes</p>
+                        <p>One of the key challenges for individuals and families searching for housing in Philadelphia is assessing affordability, amenities, 
+                            safety and transportation accessibility. LivabilityXplorer offers a valuable solution by providing comprehensive affordability analysis, 
+                            including housing average rent insights. Users can input their desired location and access data on average rental prices, 
+                            helping them make informed decisions about where to live based on their budget. Additionally, the application incorporates amenity mapping, 
+                            allowing users to explore nearby grocery stores, schools, and supermarkets. Transportation accessibility plays a crucial role as well, 
+                            with LivabilityXplorer enabling users to visualize isochrone analysis by walking, cycling, or driving timescales. These features combined 
+                            empower users to evaluate various factors influencing their housing choices and improve decision-making processes.</p>
+                        <p>Supporting Equitable Community Development Initiatives</p>
+                        <p>Urban planners and policymakers often strive for equitable community development projects that address diverse needs within Philadelphia neighborhoods. 
+                            LivabilityXplorer plays a significant role in supporting such initiatives by providing valuable insights into diversity metrics and crime visualization. 
+                            The application incorporates demographic data on race and education level to help identify areas with diverse populations or potential disparities in educational opportunities. 
+                            This information aids policymakers in implementing targeted strategies for fostering inclusivity and equal access in underserved communities.</p>
+						<p>Furthermore, LivabilityXplorer's crime heatmap visualization provides an understanding of shooting incidents' spatial distribution across Philadelphia's neighborhoods. 
+                            By identifying high-risk areas with greater clarity through this visualization tool, policymakers can prioritize resources, implement preventive measures, 
+                            and engage the community in discussions about public safety enhancement efforts.</p>
+                        <p>These use case scenarios demonstrate how LivabilityXplorer goes beyond merely providing data; it translates complex urban information into actionable insights that support 
+                            decision-making at both individual levels (housing choices) and community-centered levels (equitable development).</p>
+						</span><a href="https://github.com/imtingting/final-project-jacey-tingting"><strong>Full Code</strong></a></span>
+						</div>
+					</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+
+			<!-- Icons -->
+				<ul class="icons">
+					<li><a href="https://github.com/imtingting/imtingting.github.io" class="icon brands fa-github"><span class="label">Twit  ter</span></a></li>
+					<li><a href="mailto:huangtt@upenn.edu?" class="icon solid fa-envelope"><span class="label">Instagram</span></a></li>
+					<li><a href="https://www.linkedin.com/in/tingting-huang-314983183/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					<li><a href="images/Wechat.jpg" class="icon brands fa-weixin"><span class="label">Facebook</span></a></li>
+				</ul>
+
+			<!-- Menu -->
+				<ul class="menu">
+					<li>Tingting Huang &copy; 2020. All rights reserved</li><li>Theme based on the HTML5 UP</li>
+				</ul>
+
+		</footer>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+</body>
+</html>

@@ -37,6 +37,10 @@ ol, ul {
 	list-style: none;
 }
 
+svg {
+	margin-right:5px;
+}
+
 blockquote, q {
 	quotes: none;
 }
